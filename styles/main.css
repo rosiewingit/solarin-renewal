@@ -49,6 +49,14 @@
   background-image: url("../resources/main/img-main-1.png");
 }
 
+#image-main-2 {
+  background-image : url("../resources/main/img-main-2.png");
+}
+
+#image-main-7 {
+  background-image : url("../resources/main/img-main-7.png");
+}
+
 .image-detail {
   width: 100%;
   height: auto;
