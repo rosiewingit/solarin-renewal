@@ -68,3 +68,10 @@
   background-repeat: no-repeat;
   background-image: url("../resources/main/img-main-detail-1.png");
 }
+
+#main-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../resources/main/img-main-background.jpg");
+}
