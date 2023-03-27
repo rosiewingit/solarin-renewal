@@ -1,3 +1,4 @@
+git pull origin master
 git add *
 git status
 git commit -m "Update by flexx"
