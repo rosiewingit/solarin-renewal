@@ -53,6 +53,10 @@
   background-image : url("../resources/main/img-main-2.png");
 }
 
+#image-main-3 {
+  background-image : url("../resources/main/img-main-3.png")
+}
+
 #image-main-7 {
   background-image : url("../resources/main/img-main-7.png");
 }
