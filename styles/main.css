@@ -39,7 +39,7 @@
 
 .card-image-main {
   border-radius: 5px 5px 0px 0px;
-  background-color: #3e3e3e;
+  background-color: #646464;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,7 +70,7 @@
 }
 
 #image-main-7 {
-  background-image : url("../resources/main/img-main-7.png");
+  background-image : url("../resources/main/img-main-7.png")
 }
 
 .image-detail {
@@ -85,9 +85,9 @@
   background-image: url("../resources/main/img-main-detail-1.png");
 }
 
-#main-background {
+/* #main-background {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../resources/main/img-main-background.jpg");
-}
+} */
