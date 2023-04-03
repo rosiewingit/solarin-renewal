@@ -10,6 +10,20 @@
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+
+  .img-fluid {
+    max-width: 80%;
+    display: flex;
+    margin: auto;
+  }
+}
+
+@media (pointer: coarse) {
+  .img-fluid {
+    max-width: 100%;
+    display: flex;
+    margin: none;
+  }
 }
 
 .bi {
@@ -50,27 +64,27 @@
 }
 
 #image-main-2 {
-  background-image : url("../resources/main/img-main-2.png");
+  background-image: url("../resources/main/img-main-2.png");
 }
 
 #image-main-3 {
-  background-image : url("../resources/main/img-main-3.png")
+  background-image: url("../resources/main/img-main-3.png");
 }
 
 #image-main-4 {
-  background-image : url("../resources/main/img-main-4.png")
+  background-image: url("../resources/main/img-main-4.png");
 }
 
 #image-main-5 {
-  background-image : url("../resources/main/img-main-5.png")
+  background-image: url("../resources/main/img-main-5.png");
 }
 
 #image-main-6 {
-  background-image : url("../resources/main/img-main-6.png")
+  background-image: url("../resources/main/img-main-6.png");
 }
 
 #image-main-7 {
-  background-image : url("../resources/main/img-main-7.png")
+  background-image: url("../resources/main/img-main-7.png");
 }
 
 .image-detail {
