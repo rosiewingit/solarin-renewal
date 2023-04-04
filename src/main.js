@@ -1,16 +1,9 @@
 window.onload = () => {
   console.log("main");
-  showMain();
+  addPopstateEvent();
+  showPage(mainPageId);
 };
 
-function showMain() {
-  console.log("click main");
-  $("#page-main").css("display", "block");
-  $("#page-detail").css("display", "none");
-}
-
 function showDetail() {
-  console.log("click detail");
-  $("#page-detail").css("display", "block");
-  $("#page-main").css("display", "none");
+  showPage(detailPageId);
 }
