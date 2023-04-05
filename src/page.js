@@ -70,8 +70,6 @@ function showDetail(id) {
     case 1:
       detailImages = [
         "./resources/main/img-main-detail-1.png",
-        "./resources/main/img-main-detail-2.png",
-        "./resources/main/img-main-detail-3.png",
         "./resources/main/img-main-detail-4.png",
       ];
       break;

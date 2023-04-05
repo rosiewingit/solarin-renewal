@@ -145,3 +145,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.patent-card {
+  margin-bottom: 20px;
+}
