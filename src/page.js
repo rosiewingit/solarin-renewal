@@ -1,6 +1,7 @@
 const homePageId = "#page-home";
 const mainPageId = "#page-main";
 const detailPageId = "#page-detail";
+const patentPageId = "#page-patent";
 
 const pages = [homePageId, mainPageId, detailPageId];
 
@@ -138,6 +139,11 @@ function showDetail(id) {
 
   const technologyDetail = new TechnologyDetail(detailImages);
   technologyDetail.init();
+}
+
+function showPatent() {
+  changeTheme("light");
+  showPage(patentPageId);
 }
 
 function changeTheme(theme) {
