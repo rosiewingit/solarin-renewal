@@ -31,10 +31,11 @@
       >
         <a
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-          onclick="showMain()"
+          onclick="showHome()"
         >
           <img
-            src="./resources/logo.png"
+            id="header-logo"
+            src="./resources/logo-dark.png"
             class="fs-4 solarin-logo solarin-font-color"
           />
         </a>
@@ -51,6 +52,24 @@
         </ul>
       </header>
     </div>
+    <main id="page-home" class="cover-container px-3 mx-auto my-auto">
+      <section>
+        <h1>Cover your page.</h1>
+        <p class="lead">
+          Cover is a one-page template for building simple and beautiful home
+          pages. Download, edit the text, and add your own fullscreen background
+          photo to make it your own.
+        </p>
+        <p class="lead">
+          <a
+            href="#"
+            class="btn btn-lg btn-light fw-bold border-white bg-white"
+            onclick="showMain()"
+            >Learn more</a
+          >
+        </p>
+      </section>
+    </main>
     <main id="page-main">
       <section id="main-background" class="py-5 text-center container-fluid">
         <div class="row py-lg-5">

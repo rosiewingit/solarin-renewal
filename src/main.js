@@ -1,9 +1,5 @@
 window.onload = () => {
   console.log("main");
   addPopstateEvent();
-  showPage(mainPageId);
+  showHome();
 };
-
-function showDetail() {
-  showPage(detailPageId);
-}
