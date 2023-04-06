@@ -3,7 +3,7 @@ const mainPageId = "#page-main";
 const detailPageId = "#page-detail";
 const patentPageId = "#page-patent";
 
-const pages = [homePageId, mainPageId, detailPageId];
+const pages = [homePageId, mainPageId, detailPageId, patentPageId];
 
 const showPage = (pageId) => {
   history.pushState(pageId, pageId);
