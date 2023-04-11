@@ -69,26 +69,30 @@ function showDetail(id) {
   switch (id) {
     case 1:
       detailImages = [
-        "./resources/main/img-main-detail-1.png",
-        "./resources/main/img-main-detail-4.png",
+        "./resources/main/1_img-main-detail-1.png",
+        "./resources/main/1_img-main-detail-2.png",
+        "./resources/main/1_img-main-detail-3.png",
+        "./resources/main/1_img-main-detail-4.png",
       ];
       break;
 
     case 2:
       detailImages = [
-        "./resources/main/img-main-detail-1.png",
-        "./resources/main/img-main-detail-2.png",
-        "./resources/main/img-main-detail-3.png",
-        "./resources/main/img-main-detail-4.png",
+        "./resources/main/2_img-main-detail-1.jpeg",
+        "./resources/main/2_img-main-detail-2.jpeg",
+        "./resources/main/2_img-main-detail-3.jpeg",
+        "./resources/main/2_img-main-detail-4.jpeg",
+        "./resources/main/2_img-main-detail-5.jpeg",
+        "./resources/main/2_img-main-detail-6.jpeg",
+        "./resources/main/2_img-main-detail-7.jpeg",
+        "./resources/main/2_img-main-detail-8.jpeg",
+        "./resources/main/2_img-main-detail-9.jpeg",
       ];
       break;
 
     case 3:
       detailImages = [
-        "./resources/main/img-main-detail-1.png",
-        "./resources/main/img-main-detail-2.png",
-        "./resources/main/img-main-detail-3.png",
-        "./resources/main/img-main-detail-4.png",
+        "./resources/main/3_img-main-detail-1.png",
       ];
       break;
 
@@ -111,7 +115,13 @@ function showDetail(id) {
       break;
 
     case 6:
-      detailImages = ["./resources/main/img-main-detail-1.png"];
+      detailImages = [
+        "./resources/main/6_img-main-detail-1.png",
+        "./resources/main/6_img-main-detail-2.png",
+        "./resources/main/6_img-main-detail-3.png",
+        "./resources/main/6_img-main-detail-4.png",
+        "./resources/main/6_img-main-detail-5.png",
+      ];
       break;
 
     case 7:
