@@ -240,3 +240,12 @@ body {
 .header-nav-light:active {
   --bs-nav-link-hover-color: #00a634 !important;
 }
+
+/* footer */
+.footer-nav-dark {
+  --bs-nav-link-color: #ffffff !important;
+}
+
+.footer-nav-light {
+  --bs-nav-link-color: #000000 !important;
+}
