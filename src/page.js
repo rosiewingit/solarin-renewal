@@ -156,21 +156,37 @@ function showPatent() {
 
 function changeTheme(theme) {
   const bodyElement = $("body");
+
+  // logo
   const headerLogoElement = $("#header-logo");
   const darkLogo = "./resources/logo-dark.png";
   const lightLogo = "./resources/logo-light.png";
+
+  // header
+  const headerContainer = $("#header-container");
+
+  // footer
+  const footerNavs = $(".footer-nav");
 
   let image;
   switch (theme) {
     case "dark":
       bodyElement.addClass("container-fluid");
       bodyElement.addClass("text-bg-dark");
+      headerContainer.addClass("header-nav-dark");
+      headerContainer.removeClass("header-nav-light");
+      footerNavs.addClass("footer-nav-dark");
+      footerNavs.removeClass("footer-nav-light");
       image = darkLogo;
       break;
     case "light":
     default:
       bodyElement.removeClass("container-fluid");
       bodyElement.removeClass("text-bg-dark");
+      headerContainer.addClass("header-nav-light");
+      headerContainer.removeClass("header-nav-dark");
+      footerNavs.addClass("footer-nav-light");
+      footerNavs.removeClass("footer-nav-dark");
       image = lightLogo;
       break;
   }
