@@ -96,6 +96,9 @@ body {
   background-image: url("../resources/main/img-main-7.png");
 }
 
+#image-main-8 {
+  background-image: url("../resources/main/img-main-8.png");
+}
 .image-detail {
   width: 100%;
   height: auto;
