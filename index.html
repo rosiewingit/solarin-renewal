@@ -1,73 +1,82 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="ID=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-    <link href="styles/main.css" rel="stylesheet" />
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="ID=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+        />
+        <link href="styles/main.css" rel="stylesheet" />
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"
+        ></script>
 
-    <script type="text/javascript" src="./src/page.js"></script>
-    <script type="text/javascript" src="./src/main.js"></script>
-    <script type="text/javascript" src="./src/technology.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <header
-        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
-      >
-        <a
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-          onclick="showHome()"
-        >
-          <img
-            id="header-logo"
-            src="./resources/logo-dark.png"
-            class="fs-4 solarin-logo solarin-font-color"
-          />
-        </a>
-
-        <ul id="header-container" class="nav nav-pills header-wrapper">
-          <li class="nav-item">
-            <a
-              href="#"
-              class="nav-link"
-              aria-current="page"
-              onclick="showMain()"
-              >Technology</a
+        <script type="text/javascript" src="./src/page.js"></script>
+        <script type="text/javascript" src="./src/main.js"></script>
+        <script type="text/javascript" src="./src/technology.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header
+                class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
             >
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link" onclick="showPatent()">Patent</a>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        </ul>
-      </header>
-    </div>
+                <a
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                    onclick="showHome()"
+                >
+                    <img
+                        id="header-logo"
+                        src="./resources/logo-dark.png"
+                        class="fs-4 solarin-logo solarin-font-color"
+                    />
+                </a>
 
-    <main id="page-home" class="cover-container px-3 mx-auto my-auto hidden">
-      <section>
-        <h1>Make convenient with new ideas.</h1>
-        <p class="lead">
-          새로운 생각으로 일상을 더 편리하게, 아이디어를 현실로 만드는 기업
-          솔라인.
-        </p>
-        <!-- <p class="lead">
+                <ul id="header-container" class="nav nav-pills header-wrapper">
+                    <li class="nav-item">
+                        <a
+                            href="#"
+                            class="nav-link"
+                            aria-current="page"
+                            onclick="showMain()"
+                            >TECHNOLOGY</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" onclick="showPatent()"
+                            >PATENT</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">PR CENTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ABOUT US</a>
+                    </li>
+                </ul>
+            </header>
+        </div>
+
+        <main
+            id="page-home"
+            class="cover-container px-3 mx-auto my-auto hidden"
+        >
+            <section>
+                <h1>Make convenient with new ideas.</h1>
+                <p class="lead">
+                    새로운 생각으로 일상을 더 편리하게, 아이디어를 현실로 만드는
+                    기업 솔라인.
+                </p>
+                <!-- <p class="lead">
           <a
             href="#"
             class="btn btn-lg btn-light fw-bold border-white bg-white"
@@ -75,537 +84,616 @@
             >Learn more</a
           >
         </p> -->
-      </section>
-    </main>
+            </section>
+        </main>
 
-    <main id="page-main" class="hidden">
-      <section id="main-background" class="py-5 text-center container-fluid">
-        <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light"><b>TECHNOLOGY & PRODUCT</b></h1>
-            <p class="lead text-muted">
-              This page is for a technology or product that is currently in
-              development or has been released.
-            </p>
-            <!-- <p>
+        <main id="page-main" class="hidden">
+            <section
+                id="main-background"
+                class="py-5 text-center container-fluid"
+            >
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light"><b>TECHNOLOGY & PRODUCT</b></h1>
+                        <p class="lead text-muted">
+                            This page is for a technology or product that is
+                            currently in development or has been released.
+                        </p>
+                        <!-- <p>
               <a href="#" class="btn btn-primary my-2">Main call to action</a>
               <a href="#" class="btn btn-secondary my-2">Secondary action</a>
             </p> -->
-          </div>
-        </div>
-      </section>
-
-      <div class="album py-5 bg-light">
-        <div class="container">
-          <div
-            id="technology-album"
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
-          >
-            <div class="col">
-              <div class="card shadow-sm">
-                <div id="image-main-1" class="card-image card-image-main"></div>
-                <div class="card-body">
-                  <p class="card-text">
-                    <b>[title] 태양열 산소 공급기<br /></b>
-                    Solar Oxygen Supply<br />
-                    본문 내용
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        id="show-detail-btn-1"
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary show-detail-btn"
-                      >
-                        Learn More
-                      </button>
                     </div>
-                    <small class="text-muted">to be released</small>
-                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <div id="image-main-2" class="card-image card-image-main"></div>
-                <div class="card-body">
-                  <p class="card-text">
-                    <b>[title] 태양열 집열 온수기<br /></b>
-                    Solar Water Heaters<br />
-                    본문 내용
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        id="show-detail-btn-2"
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary show-detail-btn"
-                      >
-                        Learn More
-                      </button>
+            </section>
+
+            <div class="album py-5 bg-light">
+                <div class="container">
+                    <div
+                        id="technology-album"
+                        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+                    >
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div
+                                    id="image-main-1"
+                                    class="card-image card-image-main"
+                                ></div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <b>[title] 태양열 산소 공급기<br /></b>
+                                        Solar Oxygen Supply<br />
+                                        본문 내용
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center"
+                                    >
+                                        <div class="btn-group">
+                                            <button
+                                                id="show-detail-btn-1"
+                                                type="button"
+                                                class="btn btn-sm btn-outline-secondary show-detail-btn"
+                                            >
+                                                Learn More
+                                            </button>
+                                        </div>
+                                        <small class="text-muted"
+                                            >to be released</small
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div
+                                    id="image-main-2"
+                                    class="card-image card-image-main"
+                                ></div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <b>[title] 태양열 집열 온수기<br /></b>
+                                        Solar Water Heaters<br />
+                                        본문 내용
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center"
+                                    >
+                                        <div class="btn-group">
+                                            <button
+                                                id="show-detail-btn-2"
+                                                type="button"
+                                                class="btn btn-sm btn-outline-secondary show-detail-btn"
+                                            >
+                                                Learn More
+                                            </button>
+                                        </div>
+                                        <small class="text-muted"
+                                            >to be released</small
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div
+                                    id="image-main-3"
+                                    class="card-image card-image-main"
+                                ></div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <b
+                                            >[title] 폐플라스틱 연소 엔진<br
+                                        /></b>
+                                        Waste Plastic Combusion Engine<br />
+                                        본문 내용
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center"
+                                    >
+                                        <div class="btn-group">
+                                            <button
+                                                id="show-detail-btn-3"
+                                                type="button"
+                                                class="btn btn-sm btn-outline-secondary show-detail-btn"
+                                            >
+                                                Learn More
+                                            </button>
+                                        </div>
+                                        <small class="text-muted"
+                                            >released</small
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div
+                                    id="image-main-4"
+                                    class="card-image card-image-main"
+                                ></div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <b
+                                            >[title] 방수 모터 및 배터리
+                                            시스템<br
+                                        /></b>
+                                        Waterproof Motor & Battery System<br />
+                                        본문 내용
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center"
+                                    >
+                                        <div class="btn-group">
+                                            <button
+                                                id="show-detail-btn-4"
+                                                type="button"
+                                                class="btn btn-sm btn-outline-secondary show-detail-btn"
+                                            >
+                                                Learn More
+                                            </button>
+                                        </div>
+                                        <small class="text-muted"
+                                            >released</small
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div
+                                    id="image-main-5"
+                                    class="card-image card-image-main"
+                                ></div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <b>[title] 구난용 자동사다리<br /></b>
+                                        Automatic Ladder for Rescue<br />
+                                        본문 내용
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center"
+                                    >
+                                        <div class="btn-group">
+                                            <button
+                                                id="show-detail-btn-5"
+                                                type="button"
+                                                class="btn btn-sm btn-outline-secondary show-detail-btn"
+                                            >
+                                                Learn More
+                                            </button>
+                                        </div>
+                                        <small class="text-muted"
+                                            >released</small
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div
+                                    id="image-main-6"
+                                    class="card-image card-image-main"
+                                ></div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <b>[title] 태양광 경광등<br /></b>
+                                        Solar Light Lamp<br />
+                                        본문 내용
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center"
+                                    >
+                                        <div class="btn-group">
+                                            <button
+                                                id="show-detail-btn-6"
+                                                type="button"
+                                                class="btn btn-sm btn-outline-secondary show-detail-btn"
+                                            >
+                                                Learn More
+                                            </button>
+                                        </div>
+                                        <small class="text-muted"
+                                            >released</small
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div
+                                    id="image-main-7"
+                                    class="card-image card-image-main"
+                                ></div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <b>[title] 어망절단기<br /></b>
+                                        Fishing Net Cutter<br />
+                                        본문 내용
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center"
+                                    >
+                                        <div class="btn-group">
+                                            <button
+                                                id="show-detail-btn-7"
+                                                type="button"
+                                                class="btn btn-sm btn-outline-secondary show-detail-btn"
+                                            >
+                                                Learn More
+                                            </button>
+                                        </div>
+                                        <small class="text-muted"
+                                            >released</small
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div
+                                    id="image-main-8"
+                                    class="card-image card-image-main"
+                                ></div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <b>[title] 페달 발전기<br /></b>
+                                        Pedal Generator<br />
+                                        본문 내용
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center"
+                                    >
+                                        <div class="btn-group">
+                                            <button
+                                                id="show-detail-btn-8"
+                                                type="button"
+                                                class="btn btn-sm btn-outline-secondary show-detail-btn"
+                                            >
+                                                Learn More
+                                            </button>
+                                        </div>
+                                        <small class="text-muted"
+                                            >released</small
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <div
+                                    id="image-main-9"
+                                    class="card-image card-image-main"
+                                ></div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        This is a wider card with supporting
+                                        text below as a natural lead-in to
+                                        additional content. This content is a
+                                        little bit longer.
+                                    </p>
+                                    <div
+                                        class="d-flex justify-content-between align-items-center"
+                                    >
+                                        <div class="btn-group">
+                                            <button
+                                                id="show-detail-btn-9"
+                                                type="button"
+                                                class="btn btn-sm btn-outline-secondary show-detail-btn"
+                                            >
+                                                View
+                                            </button>
+                                        </div>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <small class="text-muted">to be released</small>
-                  </div>
                 </div>
-              </div>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <div id="image-main-3" class="card-image card-image-main"></div>
-                <div class="card-body">
-                  <p class="card-text">
-                    <b>[title] 폐플라스틱 연소 엔진<br /></b>
-                    Waste Plastic Combusion Engine<br />
-                    본문 내용
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        id="show-detail-btn-3"
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary show-detail-btn"
-                      >
-                        Learn More
-                      </button>
+        </main>
+
+        <main id="page-detail" class="hidden">
+            <div class="py-5 container">
+                <h1 class="text-body-emphasis">Get started with Bootstrap</h1>
+                <p class="fs-5 col-md-8">
+                    Quickly and easily get started with Bootstrap's compiled,
+                    production-ready files with this barebones example featuring
+                    some basic HTML and helpful links. Download all our examples
+                    to get started.
+                </p>
+
+                <div class="mb-5">
+                    <a href="../examples/" class="btn btn-primary btn-lg px-4"
+                        >Download examples</a
+                    >
+                </div>
+
+                <hr class="col-3 col-md-2 mb-5" />
+
+                <div id="technology-detail" class="image-detail"></div>
+
+                <hr class="col-3 col-md-2 mb-5" />
+
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <h2 class="text-body-emphasis">Starter projects</h2>
+                        <p>
+                            Ready to beyond the starter template? Check out
+                            these open source projects that you can quickly
+                            duplicate to a new GitHub repository.
+                        </p>
+                        <ul class="list-unstyled ps-0">
+                            <li>
+                                <i class="bi-arrow-right-circle-fill"></i>
+                                <a
+                                    class="icon-link mb-1"
+                                    href="https://github.com/twbs/examples/tree/main/icons-font"
+                                    rel="noopener"
+                                    target="_blank"
+                                >
+                                    Bootstrap npm starter
+                                </a>
+                            </li>
+                            <li>
+                                <i class="bi-arrow-right-circle-fill"></i>
+                                <a
+                                    class="icon-link mb-1"
+                                    href="https://github.com/twbs/examples/tree/main/parcel"
+                                    rel="noopener"
+                                    target="_blank"
+                                >
+                                    Bootstrap Parcel starter
+                                </a>
+                            </li>
+                            <li>
+                                <i class="bi-arrow-right-circle-fill"></i>
+                                <a
+                                    class="icon-link mb-1"
+                                    href="https://github.com/twbs/examples/tree/main/vite"
+                                    rel="noopener"
+                                    target="_blank"
+                                >
+                                    Bootstrap Vite starter
+                                </a>
+                            </li>
+                            <li>
+                                <i class="bi-arrow-right-circle-fill"></i>
+                                <a
+                                    class="icon-link mb-1"
+                                    href="https://github.com/twbs/examples/tree/main/webpack"
+                                    rel="noopener"
+                                    target="_blank"
+                                >
+                                    Bootstrap Webpack starter
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <small class="text-muted">released</small>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="col">
-              <div class="card shadow-sm">
-                <div id="image-main-4" class="card-image card-image-main"></div>
-                <div class="card-body">
-                  <p class="card-text">
-                    <b>[title] 방수 모터 및 배터리 시스템<br /></b>
-                    Waterproof Motor & Battery System<br />
-                    본문 내용
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        id="show-detail-btn-4"
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary show-detail-btn"
-                      >
-                        Learn More
-                      </button>
+                    <div class="col-md-6">
+                        <h2 class="text-body-emphasis">Guides</h2>
+                        <p>
+                            Read more detailed instructions and documentation on
+                            using or contributing to Bootstrap.
+                        </p>
+                        <ul class="list-unstyled ps-0">
+                            <li>
+                                <i class="bi-arrow-right-circle-fill"></i>
+                                <a
+                                    class="icon-link mb-1"
+                                    href="../getting-started/introduction/"
+                                >
+                                    Bootstrap quick start guide
+                                </a>
+                            </li>
+                            <li>
+                                <i class="bi-arrow-right-circle-fill"></i>
+                                <a
+                                    class="icon-link mb-1"
+                                    href="../getting-started/webpack/"
+                                >
+                                    Bootstrap Webpack guide
+                                </a>
+                            </li>
+                            <li>
+                                <i class="bi-arrow-right-circle-fill"></i>
+                                <a
+                                    class="icon-link mb-1"
+                                    href="../getting-started/parcel/"
+                                >
+                                    Bootstrap Parcel guide
+                                </a>
+                            </li>
+                            <li>
+                                <i class="bi-arrow-right-circle-fill"></i>
+                                <a
+                                    class="icon-link mb-1"
+                                    href="../getting-started/vite/"
+                                >
+                                    Bootstrap Vite guide
+                                </a>
+                            </li>
+                            <li>
+                                <i class="bi-arrow-right-circle-fill"></i>
+                                <a
+                                    class="icon-link mb-1"
+                                    href="../getting-started/contribute/"
+                                >
+                                    Contributing to Bootstrap
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <small class="text-muted">released</small>
-                  </div>
                 </div>
-              </div>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <div id="image-main-5" class="card-image card-image-main"></div>
-                <div class="card-body">
-                  <p class="card-text">
-                    <b>[title] 구난용 자동사다리<br /></b>
-                    Automatic Ladder for Rescue<br />
-                    본문 내용
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        id="show-detail-btn-5"
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary show-detail-btn"
-                      >
-                        Learn More
-                      </button>
-                    </div>
-                    <small class="text-muted">released</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <div id="image-main-6" class="card-image card-image-main"></div>
-                <div class="card-body">
-                  <p class="card-text">
-                    <b>[title] 태양광 경광등<br /></b>
-                    Solar Light Lamp<br />
-                    본문 내용
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        id="show-detail-btn-6"
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary show-detail-btn"
-                      >
-                        Learn More
-                      </button>
-                    </div>
-                    <small class="text-muted">released</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+        </main>
 
-            <div class="col">
-              <div class="card shadow-sm">
-                <div id="image-main-7" class="card-image card-image-main"></div>
-                <div class="card-body">
-                  <p class="card-text">
-                    <b>[title] 어망절단기<br /></b>
-                    Fishing Net Cutter<br />
-                    본문 내용
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        id="show-detail-btn-7"
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary show-detail-btn"
-                      >
-                        Learn More
-                      </button>
-                    </div>
-                    <small class="text-muted">released</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <div id="image-main-8" class="card-image card-image-main"></div>
-                <div class="card-body">
-                  <p class="card-text">
-                    <b>[title] 페달 발전기<br /></b>
-                    Pedal Generator<br />
-                    본문 내용
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        id="show-detail-btn-8"
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary show-detail-btn"
-                      >
-                      Learn More
-                      </button>
-                    </div>
-                    <small class="text-muted">released</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <div id="image-main-9" class="card-image card-image-main"></div>
-                <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        id="show-detail-btn-9"
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary show-detail-btn"
-                      >
-                        View
-                      </button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <main id="page-detail" class="hidden">
-      <div class="py-5 container">
-        <h1 class="text-body-emphasis">Get started with Bootstrap</h1>
-        <p class="fs-5 col-md-8">
-          Quickly and easily get started with Bootstrap's compiled,
-          production-ready files with this barebones example featuring some
-          basic HTML and helpful links. Download all our examples to get
-          started.
-        </p>
-
-        <div class="mb-5">
-          <a href="../examples/" class="btn btn-primary btn-lg px-4"
-            >Download examples</a
-          >
-        </div>
-
-        <hr class="col-3 col-md-2 mb-5" />
-
-        <div id="technology-detail" class="image-detail"></div>
-
-        <hr class="col-3 col-md-2 mb-5" />
-
-        <div class="row g-5">
-          <div class="col-md-6">
-            <h2 class="text-body-emphasis">Starter projects</h2>
-            <p>
-              Ready to beyond the starter template? Check out these open source
-              projects that you can quickly duplicate to a new GitHub
-              repository.
-            </p>
-            <ul class="list-unstyled ps-0">
-              <li>
-                <i class="bi-arrow-right-circle-fill"></i>
-                <a
-                  class="icon-link mb-1"
-                  href="https://github.com/twbs/examples/tree/main/icons-font"
-                  rel="noopener"
-                  target="_blank"
-                >
-                  Bootstrap npm starter
-                </a>
-              </li>
-              <li>
-                <i class="bi-arrow-right-circle-fill"></i>
-                <a
-                  class="icon-link mb-1"
-                  href="https://github.com/twbs/examples/tree/main/parcel"
-                  rel="noopener"
-                  target="_blank"
-                >
-                  Bootstrap Parcel starter
-                </a>
-              </li>
-              <li>
-                <i class="bi-arrow-right-circle-fill"></i>
-                <a
-                  class="icon-link mb-1"
-                  href="https://github.com/twbs/examples/tree/main/vite"
-                  rel="noopener"
-                  target="_blank"
-                >
-                  Bootstrap Vite starter
-                </a>
-              </li>
-              <li>
-                <i class="bi-arrow-right-circle-fill"></i>
-                <a
-                  class="icon-link mb-1"
-                  href="https://github.com/twbs/examples/tree/main/webpack"
-                  rel="noopener"
-                  target="_blank"
-                >
-                  Bootstrap Webpack starter
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-md-6">
-            <h2 class="text-body-emphasis">Guides</h2>
-            <p>
-              Read more detailed instructions and documentation on using or
-              contributing to Bootstrap.
-            </p>
-            <ul class="list-unstyled ps-0">
-              <li>
-                <i class="bi-arrow-right-circle-fill"></i>
-                <a
-                  class="icon-link mb-1"
-                  href="../getting-started/introduction/"
-                >
-                  Bootstrap quick start guide
-                </a>
-              </li>
-              <li>
-                <i class="bi-arrow-right-circle-fill"></i>
-                <a class="icon-link mb-1" href="../getting-started/webpack/">
-                  Bootstrap Webpack guide
-                </a>
-              </li>
-              <li>
-                <i class="bi-arrow-right-circle-fill"></i>
-                <a class="icon-link mb-1" href="../getting-started/parcel/">
-                  Bootstrap Parcel guide
-                </a>
-              </li>
-              <li>
-                <i class="bi-arrow-right-circle-fill"></i>
-                <a class="icon-link mb-1" href="../getting-started/vite/">
-                  Bootstrap Vite guide
-                </a>
-              </li>
-              <li>
-                <i class="bi-arrow-right-circle-fill"></i>
-                <a class="icon-link mb-1" href="../getting-started/contribute/">
-                  Contributing to Bootstrap
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <main id="page-patent" class="hidden">
-      <section id="main-background" class="py-5 text-center container-fluid">
-        <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light"><b>PATENT</b></h1>
-            <p class="lead text-muted">
-              This page is for a technology or product that is currently in
-              development or has been released.
-            </p>
-            <!-- <p>
+        <main id="page-patent" class="hidden">
+            <section
+                id="main-background"
+                class="py-5 text-center container-fluid"
+            >
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light"><b>PATENT</b></h1>
+                        <p class="lead text-muted">
+                            This page is for a technology or product that is
+                            currently in development or has been released.
+                        </p>
+                        <!-- <p>
               <a href="#" class="btn btn-primary my-2">Main call to action</a>
               <a href="#" class="btn btn-secondary my-2">Secondary action</a>
             </p> -->
-          </div>
-        </div>
-      </section>
+                    </div>
+                </div>
+            </section>
 
-      <div class="album py-5 bg-light">
+            <div class="album py-5 bg-light">
+                <div class="container">
+                    <div
+                        id="patent-album"
+                        class="row row-cols-1 row-cols-sm-2 row-cols-md-6 g-6"
+                    >
+                        <div class="col">
+                            <div class="card patent-card">
+                                <div
+                                    id="image-patent-1"
+                                    class="card-image card-image-patent"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card patent-card">
+                                <div
+                                    id="image-patent-2"
+                                    class="card-image card-image-patent"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card patent-card">
+                                <div
+                                    id="image-patent-3"
+                                    class="card-image card-image-patent"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card patent-card">
+                                <div
+                                    id="image-patent-4"
+                                    class="card-image card-image-patent"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card patent-card">
+                                <div
+                                    id="image-patent-5"
+                                    class="card-image card-image-patent"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card patent-card">
+                                <div
+                                    id="image-patent-6"
+                                    class="card-image card-image-patent"
+                                ></div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card patent-card">
+                                <div
+                                    id="image-patent-7"
+                                    class="card-image card-image-patent"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card patent-card">
+                                <div
+                                    id="image-patent-8"
+                                    class="card-image card-image-patent"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card patent-card">
+                                <div
+                                    id="image-patent-9"
+                                    class="card-image card-image-patent"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card patent-card">
+                                <div
+                                    id="image-patent-10"
+                                    class="card-image card-image-patent"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card patent-card">
+                                <div
+                                    id="image-patent-11"
+                                    class="card-image card-image-patent"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card patent-card">
+                                <div
+                                    id="image-patent-12"
+                                    class="card-image card-image-patent"
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
         <div class="container">
-          <div
-            id="patent-album"
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-6 g-6"
-          >
-            <div class="col">
-              <div class="card patent-card">
-                <div
-                  id="image-patent-1"
-                  class="card-image card-image-patent"
-                ></div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card patent-card">
-                <div
-                  id="image-patent-2"
-                  class="card-image card-image-patent"
-                ></div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card patent-card">
-                <div
-                  id="image-patent-3"
-                  class="card-image card-image-patent"
-                ></div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card patent-card">
-                <div
-                  id="image-patent-4"
-                  class="card-image card-image-patent"
-                ></div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card patent-card">
-                <div
-                  id="image-patent-5"
-                  class="card-image card-image-patent"
-                ></div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card patent-card">
-                <div
-                  id="image-patent-6"
-                  class="card-image card-image-patent"
-                ></div>
-              </div>
-            </div>
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>ABOUT US</h5>
+                        <ul class="nav flex-column footer-nav">
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="#"
+                                    class="nav-link p-0 text-body-secondary"
+                                    >솔라인은 2019년 설립된 아이디어 설계-제작
+                                    업체로서 기관 및 공기업과 협력하여 구난,
+                                    방재 관련 제품을 주력으로 개발하고 있으며,
+                                    독자적인 기술력으로 특허를 출원하고, 국가
+                                    연구 과제를 수행중에 있습니다.<br /><br />
 
-            <div class="col">
-              <div class="card patent-card">
-                <div
-                  id="image-patent-7"
-                  class="card-image card-image-patent"
-                ></div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card patent-card">
-                <div
-                  id="image-patent-8"
-                  class="card-image card-image-patent"
-                ></div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card patent-card">
-                <div
-                  id="image-patent-9"
-                  class="card-image card-image-patent"
-                ></div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card patent-card">
-                <div
-                  id="image-patent-10"
-                  class="card-image card-image-patent"
-                ></div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card patent-card">
-                <div
-                  id="image-patent-11"
-                  class="card-image card-image-patent"
-                ></div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card patent-card">
-                <div
-                  id="image-patent-12"
-                  class="card-image card-image-patent"
-                ></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+                                    앞으로도 솔라인은 차별화 된 기술로 관련
+                                    기관과 기술적 파트너쉽을 이뤄 다양한 제품을
+                                    개발하여 사회 공헌에 앞장서는 기업이
+                                    되겠습니다.</a
+                                >
+                            </li>
 
-    <div class="container">
-      <footer class="py-5">
-        <div class="row">
-          <div class="col-6 col-md-2 mb-3">
-            <h5>footer menu 1</h5>
-            <ul class="nav flex-column footer-nav">
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">솔라인은 2019년 설립된 아이디어 설계-제작 업체로서 기관 및 공기업과 협력하여 구난, 방재 관련 제품을 주력으로 개발하고 있으며, 독자적인 기술력으로 특허를 출원하고, 국가 연구 과제를 수행중에 있습니다.<br><br>
-
-                  앞으로도 솔라인은 차별화 된 기술로 관련 기관과 기술적 파트너쉽을 이뤄 다양한 제품을 개발하여 사회 공헌에 앞장서는 기업이 되겠습니다.</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Learn More</a>
-              </li>
-              <!-- <li class="nav-item mb-2">
+                            <button class="btn btn-primary" type="button">
+                                Learn More
+                            </button>
+                            <!-- <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
               </li>
               <li class="nav-item mb-2">
@@ -614,113 +702,183 @@
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-body-secondary">About</a>
               </li> -->
-            </ul>
-          </div>
+                        </ul>
+                    </div>
 
-          <div class="col-6 col-md-2 mb-3">
-            <h5>footer menu2</h5>
-            <ul class="nav flex-column footer-nav">
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Technology</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Patent</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-              </li>
-              <!-- <li class="nav-item mb-2">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>SITEMAP</h5>
+                        <ul class="nav flex-column footer-nav">
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="#"
+                                    class="nav-link p-0 text-body-secondary"
+                                    >Technology</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="#"
+                                    class="nav-link p-0 text-body-secondary"
+                                    >Patent</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="#"
+                                    class="nav-link p-0 text-body-secondary"
+                                    >Pricing</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="#"
+                                    class="nav-link p-0 text-body-secondary"
+                                    >About</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="#"
+                                    class="nav-link p-0 text-body-secondary"
+                                    >공생기술센터</a
+                                >
+                            </li>
+                            <!-- <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-body-secondary">About</a>
               </li> -->
-            </ul>
-          </div>
+                        </ul>
+                    </div>
 
-          <div class="col-6 col-md-2 mb-3">
-            <h5>footer menu 3</h5>
-            <ul class="nav flex-column footer-nav">
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">태양열 산소 공급기</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">태양열 집열 온수기</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">폐플라스틱 연소 엔진</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">방수 모터 및 배터리 시스템</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">구난용 자동사다리</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">태양광 경광등</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">어망절단기</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">페달발전기</a>
-              </li>
-            </ul>
-          </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>PRODUCT LINEUP</h5>
+                        <ul class="nav flex-column footer-nav">
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="#"
+                                    class="nav-link p-0 text-body-secondary"
+                                    >태양열 산소 공급기</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="#"
+                                    class="nav-link p-0 text-body-secondary"
+                                    >태양열 집열 온수기</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="#"
+                                    class="nav-link p-0 text-body-secondary"
+                                    >폐플라스틱 연소 엔진</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="#"
+                                    class="nav-link p-0 text-body-secondary"
+                                    >방수 모터 및 배터리 시스템</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="#"
+                                    class="nav-link p-0 text-body-secondary"
+                                    >구난용 자동사다리</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="#"
+                                    class="nav-link p-0 text-body-secondary"
+                                    >태양광 경광등</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="#"
+                                    class="nav-link p-0 text-body-secondary"
+                                    >어망절단기</a
+                                >
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a
+                                    href="#"
+                                    class="nav-link p-0 text-body-secondary"
+                                    >페달발전기</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
 
-          <div class="col-md-5 offset-md-1 mb-3">
-            <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden"
-                  >Email address</label
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>
+                                Monthly digest of what's new and exciting from
+                                us.
+                            </p>
+                            <div
+                                class="d-flex flex-column flex-sm-row w-100 gap-2"
+                            >
+                                <label for="newsletter1" class="visually-hidden"
+                                    >Email address</label
+                                >
+                                <input
+                                    id="newsletter1"
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Email address"
+                                />
+                                <button class="btn btn-primary" type="button">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div
+                    class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
                 >
-                <input
-                  id="newsletter1"
-                  type="text"
-                  class="form-control"
-                  placeholder="Email address"
-                />
-                <button class="btn btn-primary" type="button">Subscribe</button>
-              </div>
-              
-            </form>
-          </div>
+                    <p>
+                        본사, 연구소 : 경기도 성남시 중원구 사기막골로 45번길 14
+                        성남 우림라이온스밸리 2차 A동 1110호<br />
+                        공장 : 경기도 광주시 이배재로 277-21(목현동)<br />
+                        대표이사 : 김재술 / 사업자등록번호 : 710-31-00611 /
+                        대표전화 : 0507-1395-0771<br />
+                        본 사이트의 컨텐츠에 대한 무단 복사, 배포, 스크래핑 등의
+                        행위는 저작권법에 의하여 엄격히 금지됩니다. <br />
+                        Copyright &copy; 2023 SOLARIN CO. All rights reserved.
+                    </p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3">
+                            <a class="link-body-emphasis" href="#"
+                                ><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#twitter" /></svg
+                            ></a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="link-body-emphasis" href="#"
+                                ><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#instagram" /></svg
+                            ></a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="link-body-emphasis" href="#"
+                                ><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#facebook" /></svg
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
         </div>
 
-        <div
-          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
-        >
-          <p>&copy; 2023 Solarin Co. All rights reserved.</p>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3">
-              <a class="link-body-emphasis" href="#"
-                ><svg class="bi" width="24" height="24">
-                  <use xlink:href="#twitter" /></svg
-              ></a>
-            </li>
-            <li class="ms-3">
-              <a class="link-body-emphasis" href="#"
-                ><svg class="bi" width="24" height="24">
-                  <use xlink:href="#instagram" /></svg
-              ></a>
-            </li>
-            <li class="ms-3">
-              <a class="link-body-emphasis" href="#"
-                ><svg class="bi" width="24" height="24">
-                  <use xlink:href="#facebook" /></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
