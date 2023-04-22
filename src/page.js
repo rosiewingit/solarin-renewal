@@ -2,8 +2,15 @@ const homePageId = "#page-home";
 const mainPageId = "#page-main";
 const detailPageId = "#page-detail";
 const patentPageId = "#page-patent";
+const aboutusPageId = "#page-aboutus";
 
-const pages = [homePageId, mainPageId, detailPageId, patentPageId];
+const pages = [
+  homePageId,
+  mainPageId,
+  detailPageId,
+  patentPageId,
+  aboutusPageId,
+];
 
 const showPage = (pageId) => {
   history.pushState(pageId, pageId);
@@ -60,10 +67,10 @@ function showDetail(id) {
   showPage(detailPageId);
 
   let detailImages = [
-    "./resources/main/img-main-detail-1.png",
-    "./resources/main/img-main-detail-2.png",
-    "./resources/main/img-main-detail-3.png",
-    "./resources/main/img-main-detail-4.png",
+    "./resources/main/1_img-main-detail-1.png",
+    "./resources/main/1_img-main-detail-2.png",
+    "./resources/main/1_img-main-detail-3.png",
+    "./resources/main/1_img-main-detail-4.png",
   ];
 
   switch (id) {
@@ -91,9 +98,7 @@ function showDetail(id) {
       break;
 
     case 3:
-      detailImages = [
-        "./resources/main/3_img-main-detail-1.png",
-      ];
+      detailImages = ["./resources/main/3_img-main-detail-1.png"];
       break;
 
     case 4:
@@ -147,13 +152,28 @@ function showDetail(id) {
       break;
   }
 
-  const technologyDetail = new TechnologyDetail(detailImages);
-  technologyDetail.init();
+  const bigDetailImage = new BigDetailImage("technology-detail", detailImages);
+  bigDetailImage.init();
 }
 
 function showPatent() {
   changeTheme("light");
   showPage(patentPageId);
+}
+
+function showAboutus() {
+  changeTheme("light");
+  showPage(aboutusPageId);
+
+  let detailImages = [
+    "./resources/main/1_img-main-detail-1.png",
+    "./resources/main/1_img-main-detail-2.png",
+    "./resources/main/1_img-main-detail-3.png",
+    "./resources/main/1_img-main-detail-4.png",
+  ];
+
+  const bigDetailImage = new BigDetailImage("aboutus-detail", detailImages);
+  bigDetailImage.init();
 }
 
 function changeTheme(theme) {

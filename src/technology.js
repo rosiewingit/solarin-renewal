@@ -39,9 +39,10 @@ class Technology {
   }
 }
 
-class TechnologyDetail {
+class BigDetailImage {
   rootId = "technology-detail";
-  constructor(images) {
+  constructor(rootId, images) {
+    this.rootId = rootId;
     this.images = images;
   }
 
