@@ -252,3 +252,11 @@ body {
 .footer-nav-light {
   --bs-nav-link-color: #000000 !important;
 }
+
+.footer-text {
+  font-size: 12px;
+}
+
+.footer-text2 {
+  font-size: 14px;
+}
