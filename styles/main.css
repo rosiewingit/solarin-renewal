@@ -260,3 +260,24 @@ body {
 .footer-text2 {
   font-size: 14px;
 }
+
+.v {
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #3e3e3e;
+  font-weight: bolder;
+}
+
+.button-color {
+  background-color: #00a634;
+  border: none;
+}
+
+.button-color:hover {
+  background-color: #00a634;
+  border: none;
+}
+
+.footer-link:hover {
+  font-weight: 700;
+}
