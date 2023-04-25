@@ -179,6 +179,8 @@ function changeTheme(theme) {
   const darkLogo = "./resources/logo-dark.png";
   const lightLogo = "./resources/logo-light.png";
 
+  const footerLogoElement = $("#footer-logo");
+
   // header
   const headerContainer = $("#header-container");
 
@@ -207,4 +209,5 @@ function changeTheme(theme) {
   }
 
   headerLogoElement.attr("src", image);
+  footerLogoElement.attr("src", image);
 }

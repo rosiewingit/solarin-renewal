@@ -1,0 +1,18 @@
+.access-map-container {
+  position: relative;
+  width: 100%;
+  height: 56%;
+}
+
+.map-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  text-align: center;
+}
+
+.map-overlay-pin {
+  width: 80px;
+  height: auto;
+}
