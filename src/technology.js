@@ -56,7 +56,7 @@ class BigDetailImage {
 
   addImage(image) {
     return `
-    <img class="img-fluid" src="${image}" />
+    <img class="img-fluid img-fluid-80" src="${image}" />
     `;
   }
 }

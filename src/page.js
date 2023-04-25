@@ -165,9 +165,7 @@ function showAboutus() {
   changeTheme("light");
   showPage(aboutusPageId);
 
-  let detailImages = [
-    "./resources/aboutus/aboutus.png"
-  ];
+  let detailImages = ["./resources/aboutus/aboutus.png"];
 
   const bigDetailImage = new BigDetailImage("aboutus-detail", detailImages);
   bigDetailImage.init();
@@ -190,7 +188,6 @@ function changeTheme(theme) {
   let image;
   switch (theme) {
     case "dark":
-      bodyElement.addClass("container-fluid");
       bodyElement.addClass("text-bg-dark");
       headerContainer.addClass("header-nav-dark");
       headerContainer.removeClass("header-nav-light");
@@ -200,7 +197,6 @@ function changeTheme(theme) {
       break;
     case "light":
     default:
-      bodyElement.removeClass("container-fluid");
       bodyElement.removeClass("text-bg-dark");
       headerContainer.addClass("header-nav-light");
       headerContainer.removeClass("header-nav-dark");
