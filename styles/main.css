@@ -52,10 +52,6 @@ body {
 }
 
 @media (max-width: 767px) {
-    /* #header-container {
-        font-size: 10px;
-    } */
-
     .img-fluid {
         max-width: 100%;
         display: flex;
