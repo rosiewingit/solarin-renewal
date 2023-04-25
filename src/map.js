@@ -1,3 +1,11 @@
+const isMobile = () => {
+  return (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    ) && window.matchMedia("(pointer: coarse)").matches
+  );
+};
+
 const drawMap = (id, geo) => {
   const container = document.getElementById(id);
   const position = new naver.maps.LatLng(geo.lat, geo.lng);
@@ -10,13 +18,34 @@ const drawMap = (id, geo) => {
   drawInfoWindow(map, position);
 };
 
+const goToContact = () => {
+  if (isMobile()) {
+    location.href = "tel:0507-1395-0771";
+  } else {
+    location.href = "mailto:voicechip@naver.com";
+  }
+};
+
 function drawInfoWindow(map, position) {
   const marker = new naver.maps.Marker({
     map: map,
     position: position,
   });
 
-  const contentString = `
+  let contentString = "";
+
+  const mobileOverlay = `
+      <button
+        type="button"
+        id="accessContactBtn"
+        class="btn mobile-access-button"
+        onclick="goToContact()"
+      >
+      Contact us
+      </button>
+  `;
+
+  const pcOverlay = `
     <div class="access-map-overlay">
       <div class="overlay-top">
         <img loading="lazy" class="brand-logo-color" src="./resources/logo-light.png" />
@@ -43,6 +72,12 @@ function drawInfoWindow(map, position) {
     </div>
   `;
 
+  if (isMobile()) {
+    contentString = mobileOverlay;
+  } else {
+    contentString = pcOverlay;
+  }
+
   const infowindow = new naver.maps.InfoWindow({
     content: contentString,
     backgroundColor: "rgba(0,0,0,0)",
@@ -63,7 +98,7 @@ function drawInfoWindow(map, position) {
 function CustomOverlay(options) {
   this._element = $(
     '<div class="map-overlay">' +
-      '<img src="./resources/logo-color.png" class="map-overlay-pin">' +
+      '<img src="./resources/logo-light.png" class="map-overlay-pin">' +
       "</div>"
   );
 

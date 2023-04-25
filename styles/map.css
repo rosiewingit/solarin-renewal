@@ -1,9 +1,3 @@
-.access-map-container {
-  position: relative;
-  width: 100%;
-  height: 56%;
-}
-
 .map-overlay {
   position: absolute;
   left: 0;
@@ -15,4 +9,87 @@
 .map-overlay-pin {
   width: 80px;
   height: auto;
+}
+
+.map-image {
+  margin-left: 10%;
+  width: 80%;
+  height: 500px;
+  outline: 1px #545454 solid;
+}
+
+.access-map-overlay {
+  position: absolute;
+  width: 400px;
+  height: 140px;
+  background-color: #ffffff;
+  z-index: 100;
+  bottom: 0px;
+  border: 2px #00a634 solid;
+}
+
+.overlay-top {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 35%;
+}
+
+.overlay-bottom {
+  position: relative;
+  width: 85%;
+  height: 65%;
+  padding-top: 2%;
+  padding-left: 5%;
+}
+
+.overlay-top img {
+  height: 70%;
+  align-self: end;
+  margin-left: 5%;
+}
+
+.overlay-text {
+  width: 100%;
+  font-size: 12px;
+  line-height: 120%;
+}
+
+.access-button {
+  position: absolute;
+  width: 21%;
+  height: 24%;
+  bottom: 8%;
+  right: 2%;
+  text-align: center;
+  background-color: #00a634;
+  color: #ffffff;
+  line-height: 10%;
+  font-size: 11px;
+  border-radius: 0;
+}
+
+.access-button:hover {
+  background-color: #00a634;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.mobile-access-button {
+  position: absolute;
+  width: 100px;
+  height: 32px;
+  bottom: 0%;
+  right: 2%;
+  text-align: center;
+  background-color: #00a634;
+  color: #ffffff;
+  line-height: 14px;
+  font-size: 14px;
+}
+
+.mobile-access-button:hover {
+  background-color: #00a634;
+  color: #ffffff;
+  opacity: 0.7;
 }

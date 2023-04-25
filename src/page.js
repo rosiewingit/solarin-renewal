@@ -169,6 +169,8 @@ function showAboutus() {
 
   const bigDetailImage = new BigDetailImage("aboutus-detail", detailImages);
   bigDetailImage.init();
+
+  drawMap("mainMap", { lat: 37.4363913419989, lng: 127.17004436645088 });
 }
 
 function changeTheme(theme) {
