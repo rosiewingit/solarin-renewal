@@ -33,6 +33,58 @@ body {
     .footer-text2 {
         font-size: 14px;
     }
+
+    .carousel-image-1 {
+        background-image: url("../resources/background/1_w.png");
+    }
+
+    .carousel-image-2 {
+        background-image: url("../resources/background/2_w.png");
+    }
+
+    .carousel-image-3 {
+        background-image: url("../resources/background/3_w.png");
+    }
+
+    .carousel-image-4 {
+        background-image: url("../resources/background/4_w.png");
+    }
+}
+
+@media (max-width: 767px) {
+    /* #header-container {
+        font-size: 10px;
+    } */
+
+    .img-fluid {
+        max-width: 100%;
+        display: flex;
+        margin: none;
+    }
+
+    .footer-text2 {
+        font-size: 12px;
+    }
+
+    .footer-main {
+        width: 100%;
+    }
+
+    .carousel-image-1 {
+        background-image: url("../resources/background/1_s.png");
+    }
+
+    .carousel-image-2 {
+        background-image: url("../resources/background/2_s.png");
+    }
+
+    .carousel-image-3 {
+        background-image: url("../resources/background/3_s.png");
+    }
+
+    .carousel-image-4 {
+        background-image: url("../resources/background/4_s.png");
+    }
 }
 
 /* Mobile */
@@ -53,6 +105,22 @@ body {
 
     .footer-main {
         width: 100%;
+    }
+
+    .carousel-image-1 {
+        background-image: url("../resources/background/1_s.png");
+    }
+
+    .carousel-image-2 {
+        background-image: url("../resources/background/2_s.png");
+    }
+
+    .carousel-image-3 {
+        background-image: url("../resources/background/3_s.png");
+    }
+
+    .carousel-image-4 {
+        background-image: url("../resources/background/4_s.png");
     }
 }
 
@@ -317,22 +385,6 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-}
-
-.carousel-image-1 {
-    background-image: url("../resources/background/1.png");
-}
-
-.carousel-image-2 {
-    background-image: url("../resources/background/2.png");
-}
-
-.carousel-image-3 {
-    background-image: url("../resources/background/3.png");
-}
-
-.carousel-image-4 {
-    background-image: url("../resources/background/4.png");
 }
 
 .carousel-caption {
