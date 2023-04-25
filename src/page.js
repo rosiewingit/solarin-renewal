@@ -166,10 +166,7 @@ function showAboutus() {
   showPage(aboutusPageId);
 
   let detailImages = [
-    "./resources/main/1_img-main-detail-1.png",
-    "./resources/main/1_img-main-detail-2.png",
-    "./resources/main/1_img-main-detail-3.png",
-    "./resources/main/1_img-main-detail-4.png",
+    "./resources/aboutus/aboutus.png"
   ];
 
   const bigDetailImage = new BigDetailImage("aboutus-detail", detailImages);
