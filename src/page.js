@@ -21,6 +21,7 @@ const showPage = (pageId) => {
       $(`${page}`).addClass("hidden");
     }
   });
+  this.initScroll();
 };
 
 const addPopstateEvent = () => {
@@ -171,6 +172,10 @@ function showAboutus() {
   bigDetailImage.init();
 
   drawMap("mainMap", { lat: 37.4363913419989, lng: 127.17004436645088 });
+}
+
+function initScroll() {
+  $("html").animate({ scrollTop: 0 }, 0);
 }
 
 function changeTheme(theme) {
