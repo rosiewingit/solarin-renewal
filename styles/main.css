@@ -297,7 +297,7 @@ body {
     --bs-nav-link-padding-y: 0.5rem;
     --bs-nav-link-font-weight: ;
     --bs-nav-link-color: #ffffff;
-    --bs-nav-link-hover-color: #00a634;
+    --bs-nav-link-hover-color: #01cf42;
     --bs-nav-link-disabled-color: #6c757d;
     display: flex;
     flex-wrap: wrap;
@@ -326,7 +326,7 @@ body {
 }
 
 .header-nav-dark:active {
-    --bs-nav-link-hover-color: #00a634 !important;
+    --bs-nav-link-hover-color: #01cf42 !important;
 }
 
 .header-nav-light {
@@ -334,7 +334,7 @@ body {
 }
 
 .header-nav-light:active {
-    --bs-nav-link-hover-color: #00a634 !important;
+    --bs-nav-link-hover-color: #01cf42 !important;
 }
 
 /* footer */
@@ -363,14 +363,32 @@ body {
 }
 
 .button-color:hover {
-    background-color: #00a634;
+    background-color: #01cf42;
     border: none;
+    font-weight: 5000;
 }
 
 .button-color:active {
-    background-color: #000000 !important;
+    background-color: #00a634 !important;
     border: none;
-    color: #01cf42;
+}
+
+.button-detail {
+    background-color: #ffffff;
+    border-color: #00a634;
+    color: #00a634;
+}
+
+.button-detail:hover {
+    background-color: #00a634;
+    border-color: #00a634;
+    color: #ffffff;
+}
+
+.button-detail:active {
+    background-color: #01cf42 !important;
+    border-color: #01cf42 !important;
+    color: #ffffff !important;
 }
 
 .footer-link:hover {
