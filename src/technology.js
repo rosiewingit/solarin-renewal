@@ -41,12 +41,28 @@ class Technology {
 
 class BigDetailImage {
   rootId = "technology-detail";
-  constructor(rootId, images) {
+  constructor(rootId, info) {
     this.rootId = rootId;
-    this.images = images;
+    this.images = info.images;
+    this.title = info.title;
+    this.text = info.text;
+    this.link = info.link;
   }
 
   init() {
+    this.setImage();
+    this.setTitle();
+    this.setText();
+    this.setLink();
+  }
+
+  addImage(image) {
+    return `
+    <img class="img-fluid img-fluid-80" src="${image}" />
+    `;
+  }
+
+  setImage() {
     $(`#${this.rootId}`).empty();
 
     for (const image of this.images) {
@@ -54,9 +70,15 @@ class BigDetailImage {
     }
   }
 
-  addImage(image) {
-    return `
-    <img class="img-fluid img-fluid-80" src="${image}" />
-    `;
+  setTitle() {
+    $(`#${this.rootId}-title`).text(this.title);
+  }
+
+  setText() {
+    $(`#${this.rootId}-text`).text(this.text);
+  }
+
+  setLink() {
+    $(`#${this.rootId}-link`).attr("href", this.link);
   }
 }

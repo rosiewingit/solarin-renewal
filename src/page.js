@@ -88,6 +88,11 @@ function showDetail(id) {
   showPage(detailPageId);
   window.location.hash = `#page-detail/id/${id}`;
 
+  let defailInfo = {};
+
+  let detailTitle = "교육용 LED 키트";
+  let detailText = "교육용 LED 키트";
+  let detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
   let detailImages = [
     "./resources/main/1_img-main-detail-1.png",
     "./resources/main/1_img-main-detail-2.png",
@@ -111,6 +116,10 @@ function showDetail(id) {
         "./resources/main/1_img-main-detail-3.png",
         "./resources/main/1_img-main-detail-4.png",
       ];
+      detailTitle = "교육용 LED 키트";
+      detailText =
+        "지금 바로 솔라인 스마트 스토어에서 교육용 LED 키트를 만나보세요.";
+      detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
       break;
 
     case 2:
@@ -125,10 +134,16 @@ function showDetail(id) {
         "./resources/main/2_img-main-detail-8.jpeg",
         "./resources/main/2_img-main-detail-9.jpeg",
       ];
+      detailTitle = "쐐기풀";
+      detailText = "교육용 LED 키트";
+      detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
       break;
 
     case 3:
       detailImages = ["./resources/main/3_img-main-detail-1.png"];
+      detailTitle = "교육용 LED 키트";
+      detailText = "교육용 LED 키트";
+      detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
       break;
 
     case 4:
@@ -138,6 +153,9 @@ function showDetail(id) {
         "./resources/main/img-main-detail-3.png",
         "./resources/main/img-main-detail-4.png",
       ];
+      detailTitle = "교육용 LED 키트";
+      detailText = "교육용 LED 키트";
+      detailLink = "http://www.naver.com";
       break;
 
     case 5:
@@ -148,6 +166,9 @@ function showDetail(id) {
         "./resources/main/5_img-main-detail-4.png",
         "./resources/main/5_img-main-detail-5.png",
       ];
+      detailTitle = "교육용 LED 키트";
+      detailText = "룰루";
+      detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
       break;
 
     case 6:
@@ -158,6 +179,9 @@ function showDetail(id) {
         "./resources/main/6_img-main-detail-4.png",
         "./resources/main/6_img-main-detail-5.png",
       ];
+      detailTitle = "교육용 LED 키트";
+      detailText = "교육용 LED 키트";
+      detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
       break;
 
     case 7:
@@ -169,6 +193,9 @@ function showDetail(id) {
         "./resources/main/7_img-main-detail-5.png",
         "./resources/main/7_img-main-detail-6.png",
       ];
+      detailTitle = "교육용 LED 키트";
+      detailText = "랄랄라";
+      detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
       break;
 
     case 8:
@@ -178,6 +205,9 @@ function showDetail(id) {
         "./resources/main/8_img-main-detail-3.png",
         "./resources/main/8_img-main-detail-4.png",
       ];
+      detailTitle = "교육용 LED 키트";
+      detailText = "교육용 LED 키트";
+      detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
       break;
 
     case 9:
@@ -187,10 +217,18 @@ function showDetail(id) {
         "./resources/main/9_img-main-detail-2.jpg",
         "./resources/main/9_img-main-detail-3.jpg",
       ];
+      detailTitle = "교육 LED 키트";
+      detailText = "교육용 LED 키트";
+      detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
       break;
   }
 
-  const bigDetailImage = new BigDetailImage("technology-detail", detailImages);
+  defailInfo.images = detailImages;
+  defailInfo.title = detailTitle;
+  defailInfo.text = detailText;
+  defailInfo.link = detailLink;
+
+  const bigDetailImage = new BigDetailImage("technology-detail", defailInfo);
   bigDetailImage.init();
 }
 
