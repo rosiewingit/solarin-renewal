@@ -151,7 +151,7 @@ function showDetail(id) {
       detailTitle = "폐플라스틱 연소 엔진";
       detailText =
         "해당 제품은 폐플라스틱 연소기의 핵심 기술 부품으로서, 판매 하는 제품이 아님을 밝힙니다.<br>This product is a key technical component of waste plastic combustion and is not sold.";
-      detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
+      detailLink = "";
       break;
 
     case 4:
