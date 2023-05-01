@@ -44,8 +44,14 @@ const showPage = (pageId) => {
 
 const addPopstateEvent = () => {
   window.addEventListener("popstate", (event) => {
-    if (event.state === mainPageId) {
-      showPage(mainPageId);
+    if (event.state === detailPageId) {
+      showMain();
+    } else if (event.state === mainPageId) {
+      showHome();
+    } else if (event.state === patentPageId) {
+      showHome();
+    } else if (event.state === aboutusPageId) {
+      showHome();
     }
   });
 };
