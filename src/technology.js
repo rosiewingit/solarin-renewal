@@ -1,12 +1,12 @@
 class Technology {
-  rootId = "technology-album";
-  rootElement;
-  constructor() {
-    this.rootElement = $(`#${this.rootId}`);
-  }
+    rootId = "technology-album";
+    rootElement;
+    constructor() {
+        this.rootElement = $(`#${this.rootId}`);
+    }
 
-  createTechnologyCard() {
-    return `
+    createTechnologyCard() {
+        return `
     <div class="col">
       <div class="card shadow-sm">
         <div id="image-main-1" class="card-image card-image-main"></div>
@@ -32,58 +32,58 @@ class Technology {
       </div>
     </div>
     `;
-  }
+    }
 
-  addTechnologyCard() {
-    this.rootElement.append(this.createTechnologyCard());
-  }
+    addTechnologyCard() {
+        this.rootElement.append(this.createTechnologyCard());
+    }
 }
 
 class BigDetailImage {
-  rootId = "technology-detail";
-  constructor(rootId, info) {
-    this.rootId = rootId;
-    this.images = info.images;
-    this.title = info.title;
-    this.text = info.text;
-    this.link = info.link;
-  }
+    rootId = "technology-detail";
+    constructor(rootId, info) {
+        this.rootId = rootId;
+        this.images = info.images;
+        this.title = info.title;
+        this.text = info.text;
+        this.link = info.link;
+    }
 
-  init() {
-    this.setImage();
-    this.setTitle();
-    this.setText();
-    this.setLink();
-  }
+    init() {
+        this.setImage();
+        this.setTitle();
+        this.setText();
+        this.setLink();
+    }
 
-  addImage(image) {
-    return `
+    addImage(image) {
+        return `
     <img class="img-fluid img-fluid-80" src="${image}" />
     `;
-  }
-
-  setImage() {
-    $(`#${this.rootId}`).empty();
-
-    for (const image of this.images) {
-      $(`#${this.rootId}`).append(this.addImage(image));
     }
-  }
 
-  setTitle() {
-    $(`#${this.rootId}-title`).text(this.title);
-  }
+    setImage() {
+        $(`#${this.rootId}`).empty();
 
-  setText() {
-    $(`#${this.rootId}-text`).text(this.text);
-  }
-
-  setLink() {
-    if (this.link != "") {
-      $(`#${this.rootId}-link`).removeClass("hidden");
-      $(`#${this.rootId}-link`).attr("href", this.link);
-    } else {
-      $(`#${this.rootId}-link`).addClass("hidden");
+        for (const image of this.images) {
+            $(`#${this.rootId}`).append(this.addImage(image));
+        }
     }
-  }
+
+    setTitle() {
+        $(`#${this.rootId}-title`).text(this.title);
+    }
+
+    setText() {
+        $(`#${this.rootId}-text`).html(this.text);
+    }
+
+    setLink() {
+        if (this.link != "") {
+            $(`#${this.rootId}-link`).removeClass("hidden");
+            $(`#${this.rootId}-link`).attr("href", this.link);
+        } else {
+            $(`#${this.rootId}-link`).addClass("hidden");
+        }
+    }
 }
