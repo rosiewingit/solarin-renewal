@@ -243,9 +243,9 @@ function showAboutus() {
   changeTheme("light");
   showPage(aboutusPageId);
 
-  let detailImages = ["./resources/aboutus/aboutus.png"];
+  let detailInfo = { images: ["./resources/aboutus/aboutus.png"] };
 
-  const bigDetailImage = new BigDetailImage("aboutus-detail", detailImages);
+  const bigDetailImage = new BigDetailImage("aboutus-detail", detailInfo);
   bigDetailImage.init();
 
   drawMap("mainMap", { lat: 37.4363913419989, lng: 127.17004436645088 });
