@@ -122,10 +122,10 @@ function showDetail(id) {
         "./resources/main/1_img-main-detail-3.png",
         "./resources/main/1_img-main-detail-4.png",
       ];
-      detailTitle = "교육용 LED 키트";
+      detailTitle = "고산지대 쉼터용 태양열 산소공급기";
       detailText =
-        "지금 바로 솔라인 스마트 스토어에서 교육용 LED 키트를 만나보세요.";
-      detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
+        "현재 이 제품은 개발 단계의 제품으로 판매중인 제품이 아님을 밝힙니다.<br>This product is currently in the development stage and is not for sale.";
+      detailLink = "";
       break;
 
     case 2:
@@ -140,15 +140,17 @@ function showDetail(id) {
         "./resources/main/2_img-main-detail-8.jpeg",
         "./resources/main/2_img-main-detail-9.jpeg",
       ];
-      detailTitle = "쐐기풀";
-      detailText = "교육용 LED 키트";
+      detailTitle = "태양열 집열 시스템";
+      detailText =
+        "현재 이 제품은 개발 단계의 제품으로 판매중인 제품이 아님을 밝힙니다.<br>This product is currently in the development stage and is not for sale.";
       detailLink = "";
       break;
 
     case 3:
       detailImages = ["./resources/main/3_img-main-detail-1.png"];
-      detailTitle = "교육용 LED 키트";
-      detailText = "교육용 LED 키트";
+      detailTitle = "폐플라스틱 연소 엔진";
+      detailText =
+        "해당 제품은 폐플라스틱 연소기의 핵심 기술 부품으로서, 판매 하는 제품이 아님을 밝힙니다.<br>This product is a key technical component of waste plastic combustion and is not sold.";
       detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
       break;
 
@@ -159,9 +161,10 @@ function showDetail(id) {
         "./resources/main/img-main-detail-3.png",
         "./resources/main/img-main-detail-4.png",
       ];
-      detailTitle = "교육용 LED 키트";
-      detailText = "교육용 LED 키트";
-      detailLink = "http://www.naver.com";
+      detailTitle = "방수 모터 및 배터리 시스템";
+      detailText =
+        "해당 제품은 국가 연구 개발 사업으로 개발 진행중이며, 판매 하는 제품이 아님을 밝힙니다.<br>This product is being developed as a national research and development project, and it is not sold.";
+      detailLink = "";
       break;
 
     case 5:
@@ -172,9 +175,10 @@ function showDetail(id) {
         "./resources/main/5_img-main-detail-4.png",
         "./resources/main/5_img-main-detail-5.png",
       ];
-      detailTitle = "교육용 LED 키트";
-      detailText = "룰루";
-      detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
+      detailTitle = "구난용 자동사다리";
+      detailText =
+        "해당 제품은 해양 경찰에 개별 납품하고 있는 제품으로서, 온라인에서 판매하는 제품이 아님을 밝힙니다. 구매를 희망할 경우 회사로 문의 바랍니다.<br>This product is supplyed individually to the Korea Coast Guard and is not sold online. If you wish to purchase, please contact our company.";
+      detailLink = "";
       break;
 
     case 6:
@@ -185,9 +189,10 @@ function showDetail(id) {
         "./resources/main/6_img-main-detail-4.png",
         "./resources/main/6_img-main-detail-5.png",
       ];
-      detailTitle = "교육용 LED 키트";
-      detailText = "교육용 LED 키트";
-      detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
+      detailTitle = "태양광경광등";
+      detailText =
+        "지금 바로 솔라인 스마트스토어에서 태양광 경광등을 만나보세요";
+      detailLink = "https://smartstore.naver.com/solarin/products/6849253187";
       break;
 
     case 7:
@@ -199,9 +204,10 @@ function showDetail(id) {
         "./resources/main/7_img-main-detail-5.png",
         "./resources/main/7_img-main-detail-6.png",
       ];
-      detailTitle = "교육용 LED 키트";
-      detailText = "랄랄라";
-      detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
+      detailTitle = "어망절단기";
+      detailText =
+        "해당 제품은 해양 경찰에 개별 납품하고 있는 제품으로서, 온라인에서 판매하는 제품이 아님을 밝힙니다. 구매를 희망할 경우 회사로 문의 바랍니다.<br>This product is supplyed individually to the Korea Coast Guard and is not sold online. If you wish to purchase, please contact our company.";
+      detailLink = "";
       break;
 
     case 8:
@@ -211,9 +217,10 @@ function showDetail(id) {
         "./resources/main/8_img-main-detail-3.png",
         "./resources/main/8_img-main-detail-4.png",
       ];
-      detailTitle = "교육용 LED 키트";
-      detailText = "교육용 LED 키트";
-      detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
+      detailTitle = "에너지 교육용 페달 발전기";
+      detailText =
+        "지금 바로 솔라인 스마트스토어에서 에너지 교육용 페달 발전기를 만나보세요";
+      detailLink = "https://smartstore.naver.com/solarin/products/8394192118";
       break;
 
     case 9:
@@ -223,9 +230,10 @@ function showDetail(id) {
         "./resources/main/9_img-main-detail-2.jpg",
         "./resources/main/9_img-main-detail-3.jpg",
       ];
-      detailTitle = "교육 LED 키트";
-      detailText = "교육용 LED 키트";
-      detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
+      detailTitle = "교육용 LED 키트";
+      detailText =
+        "지금 바로 솔라인 스마트스토어에서 교육용 LED키트를 만나보세요";
+      detailLink = "https://smartstore.naver.com/solarin/products/8345236689";
       break;
   }
 
