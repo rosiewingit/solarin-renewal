@@ -1,203 +1,203 @@
 body {
-    box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 .hidden {
-    display: none !important;
-    visibility: hidden !important;
+  display: none !important;
+  visibility: hidden !important;
 }
 
 .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
 
-    .img-fluid {
-        max-width: 60%;
-        display: flex;
-        margin: auto;
-    }
+  .img-fluid {
+    max-width: 60%;
+    display: flex;
+    margin: auto;
+  }
 
-    .img-fluid-80 {
-        max-width: 80%;
-    }
+  .img-fluid-80 {
+    max-width: 80%;
+  }
 
-    .footer-text2 {
-        font-size: 14px;
-    }
+  .footer-text2 {
+    font-size: 14px;
+  }
 
-    .carousel-image-1 {
-        background-image: url("../resources/background/1_w.png");
-    }
+  .carousel-image-1 {
+    background-image: url("../resources/background/1_w.png");
+  }
 
-    .carousel-image-2 {
-        background-image: url("../resources/background/2_w.png");
-    }
+  .carousel-image-2 {
+    background-image: url("../resources/background/2_w.png");
+  }
 
-    .carousel-image-3 {
-        background-image: url("../resources/background/3_w.png");
-    }
+  .carousel-image-3 {
+    background-image: url("../resources/background/3_w.png");
+  }
 
-    .carousel-image-4 {
-        background-image: url("../resources/background/4_w.png");
-    }
+  .carousel-image-4 {
+    background-image: url("../resources/background/4_w.png");
+  }
 }
 
 @media (max-width: 767px) {
-    .img-fluid {
-        max-width: 100%;
-        display: flex;
-        margin: none;
-    }
+  .img-fluid {
+    max-width: 100%;
+    display: flex;
+    margin: none;
+  }
 
-    .footer-text2 {
-        font-size: 12px;
-    }
+  .footer-text2 {
+    font-size: 12px;
+  }
 
-    .footer-main {
-        width: 100%;
-    }
+  .footer-main {
+    width: 100%;
+  }
 
-    .carousel-image-1 {
-        background-image: url("../resources/background/1_s.png");
-    }
+  .carousel-image-1 {
+    background-image: url("../resources/background/1_s.png");
+  }
 
-    .carousel-image-2 {
-        background-image: url("../resources/background/2_s.png");
-    }
+  .carousel-image-2 {
+    background-image: url("../resources/background/2_s.png");
+  }
 
-    .carousel-image-3 {
-        background-image: url("../resources/background/3_s.png");
-    }
+  .carousel-image-3 {
+    background-image: url("../resources/background/3_s.png");
+  }
 
-    .carousel-image-4 {
-        background-image: url("../resources/background/4_s.png");
-    }
+  .carousel-image-4 {
+    background-image: url("../resources/background/4_s.png");
+  }
 }
 
 /* Mobile */
 @media (pointer: coarse) {
-    #header-container {
-        font-size: 10px;
-    }
+  #header-container {
+    font-size: 10px;
+  }
 
-    .img-fluid {
-        max-width: 100%;
-        display: flex;
-        margin: none;
-    }
+  .img-fluid {
+    max-width: 100%;
+    display: flex;
+    margin: none;
+  }
 
-    .footer-text2 {
-        font-size: 10px;
-    }
+  .footer-text2 {
+    font-size: 10px;
+  }
 
-    .footer-main {
-        width: 100%;
-    }
+  .footer-main {
+    width: 100%;
+  }
 
-    .carousel-image-1 {
-        background-image: url("../resources/background/1_s.png");
-    }
+  .carousel-image-1 {
+    background-image: url("../resources/background/1_s.png");
+  }
 
-    .carousel-image-2 {
-        background-image: url("../resources/background/2_s.png");
-    }
+  .carousel-image-2 {
+    background-image: url("../resources/background/2_s.png");
+  }
 
-    .carousel-image-3 {
-        background-image: url("../resources/background/3_s.png");
-    }
+  .carousel-image-3 {
+    background-image: url("../resources/background/3_s.png");
+  }
 
-    .carousel-image-4 {
-        background-image: url("../resources/background/4_s.png");
-    }
+  .carousel-image-4 {
+    background-image: url("../resources/background/4_s.png");
+  }
 }
 
 .bi {
-    vertical-align: -0.125em;
-    fill: currentColor;
+  vertical-align: -0.125em;
+  fill: currentColor;
 }
 
 .solarin-logo {
-    cursor: pointer;
-    height: 50px;
+  cursor: pointer;
+  height: 50px;
 }
 
 .solarin-font-color {
-    color: #00a634;
+  color: #00a634;
 }
 
 .solarin-color {
-    background-color: #00a634;
+  background-color: #00a634;
 }
 
 /* thumbnail */
 
 .card-image {
-    width: 100%;
-    height: 225px;
+  width: 100%;
+  height: 225px;
 }
 
 .card-image-main {
-    border-radius: 5px 5px 0px 0px;
-    background-color: #646464;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #646464;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #image-main-1 {
-    background-image: url("../resources/main/img-main-1.png");
+  background-image: url("../resources/main/img-main-1.png");
 }
 
 #image-main-2 {
-    background-image: url("../resources/main/img-main-2.png");
+  background-image: url("../resources/main/img-main-2.png");
 }
 
 #image-main-3 {
-    background-image: url("../resources/main/img-main-3.png");
+  background-image: url("../resources/main/img-main-3.png");
 }
 
 #image-main-4 {
-    background-image: url("../resources/main/img-main-4.png");
+  background-image: url("../resources/main/img-main-4.png");
 }
 
 #image-main-5 {
-    background-image: url("../resources/main/img-main-5.png");
+  background-image: url("../resources/main/img-main-5.png");
 }
 
 #image-main-6 {
-    background-image: url("../resources/main/img-main-6.png");
+  background-image: url("../resources/main/img-main-6.png");
 }
 
 #image-main-7 {
-    background-image: url("../resources/main/img-main-7.png");
+  background-image: url("../resources/main/img-main-7.png");
 }
 
 #image-main-8 {
-    background-image: url("../resources/main/img-main-8.png");
+  background-image: url("../resources/main/img-main-8.png");
 }
 
 #image-main-9 {
-    background-image: url("../resources/main/img-main-9.png");
+  background-image: url("../resources/main/img-main-9.png");
 }
 .image-detail {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 #image-main-detail-1 {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../resources/main/img-main-detail-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../resources/main/img-main-detail-1.png");
 }
 
 /* #main-background {
@@ -211,227 +211,232 @@ body {
 .btn-light,
 .btn-light:hover,
 .btn-light:focus {
-    color: #333;
-    text-shadow: none; /* Prevent inheritance from `body` */
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
 }
 
 .cover-container {
-    max-width: 42em;
-    text-align: center;
-    min-height: 90vh;
-    display: flex;
+  max-width: 42em;
+  text-align: center;
+  min-height: 90vh;
+  display: flex;
 }
 
 .cover-container section {
-    margin: auto;
+  margin: auto;
 }
 
 #image-patent-1 {
-    background-image: url("../resources/patent/p1.png");
+  background-image: url("../resources/patent/p1.png");
 }
 
 #image-patent-2 {
-    background-image: url("../resources/patent/p2.png");
+  background-image: url("../resources/patent/p2.png");
 }
 
 #image-patent-3 {
-    background-image: url("../resources/patent/p3.jpg");
+  background-image: url("../resources/patent/p3.jpg");
 }
 
 #image-patent-4 {
-    background-image: url("../resources/patent/p4.jpg");
+  background-image: url("../resources/patent/p4.jpg");
 }
 
 #image-patent-5 {
-    background-image: url("../resources/patent/p5.jpg");
+  background-image: url("../resources/patent/p5.jpg");
 }
 
 #image-patent-6 {
-    background-image: url("../resources/patent/p6.jpg");
+  background-image: url("../resources/patent/p6.jpg");
 }
 
 #image-patent-7 {
-    background-image: url("../resources/patent/c1.png");
+  background-image: url("../resources/patent/c1.png");
 }
 
 #image-patent-8 {
-    background-image: url("../resources/patent/c2.png");
+  background-image: url("../resources/patent/c2.png");
 }
 
 #image-patent-9 {
-    background-image: url("../resources/patent/c3.png");
+  background-image: url("../resources/patent/c3.png");
 }
 
 #image-patent-10 {
-    background-image: url("../resources/patent/c4.png");
+  background-image: url("../resources/patent/c4.png");
 }
 
 #image-patent-11 {
-    background-image: url("../resources/patent/c5.jpg");
+  background-image: url("../resources/patent/c5.jpg");
 }
 
 #image-patent-12 {
-    background-image: url("../resources/patent/c6.jpeg");
+  background-image: url("../resources/patent/c6.jpeg");
 }
 
 .card-image-patent {
-    border-radius: 5px 5px 5px 5px;
-    background-color: #ffffff;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #ffffff;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .patent-card {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-    color: var(--bs-nav-pills-link-active-color);
-    background-color: #00a634;
+  color: var(--bs-nav-pills-link-active-color);
+  background-color: #00a634;
 }
 
 .nav {
-    --bs-nav-link-padding-x: 1rem;
-    --bs-nav-link-padding-y: 0.5rem;
-    --bs-nav-link-font-weight: ;
-    --bs-nav-link-color: #ffffff;
-    --bs-nav-link-hover-color: #01cf42;
-    --bs-nav-link-disabled-color: #6c757d;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
+  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: #ffffff;
+  --bs-nav-link-hover-color: #01cf42;
+  --bs-nav-link-disabled-color: #6c757d;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 
 .header-wrapper {
-    margin: auto 0;
+  margin: auto 0;
 }
 
 .text-bg-dark {
-    color: rgb(255, 255, 255) !important;
-    background-color: #000000 !important;
+  color: rgb(255, 255, 255) !important;
+  background-color: #000000 !important;
 }
 
 .home-bg-dark {
-    background-image: url("../resources/main/1_img-main-detail-1.png");
+  background-image: url("../resources/main/1_img-main-detail-1.png");
 }
 
 /* header */
 
 .header-nav-dark {
-    --bs-nav-link-color: #ffffff !important;
+  --bs-nav-link-color: #ffffff !important;
 }
 
 .header-nav-dark:active {
-    --bs-nav-link-hover-color: #01cf42 !important;
+  --bs-nav-link-hover-color: #01cf42 !important;
 }
 
 .header-nav-light {
-    --bs-nav-link-color: #000000 !important;
+  --bs-nav-link-color: #000000 !important;
 }
 
 .header-nav-light:active {
-    --bs-nav-link-hover-color: #01cf42 !important;
+  --bs-nav-link-hover-color: #01cf42 !important;
 }
 
 /* footer */
 .footer-nav-dark {
-    --bs-nav-link-color: #ffffff !important;
+  --bs-nav-link-color: #ffffff !important;
 }
 
 .footer-nav-light {
-    --bs-nav-link-color: #000000 !important;
+  --bs-nav-link-color: #000000 !important;
 }
 
 .footer-text {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .v {
-    padding-left: 6px;
-    padding-right: 6px;
-    color: #3e3e3e;
-    font-weight: bolder;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #3e3e3e;
+  font-weight: bolder;
 }
 
 .button-color {
-    background-color: #00a634;
-    border: none;
+  background-color: #00a634;
+  border: none;
 }
 
 .button-color:hover {
-    background-color: #01cf42;
-    border: none;
-    font-weight: 5000;
+  background-color: #01cf42;
+  border: none;
+  font-weight: 5000;
 }
 
 .button-color:active {
-    background-color: #00a634 !important;
-    border: none;
+  background-color: #00a634 !important;
+  border: none;
 }
 
 .button-detail {
-    background-color: #ffffff;
-    border-color: #00a634;
-    color: #00a634;
+  background-color: #ffffff;
+  border-color: #00a634;
+  color: #00a634;
 }
 
 .button-detail:hover {
-    background-color: #00a634;
-    border-color: #00a634;
-    color: #ffffff;
+  background-color: #00a634;
+  border-color: #00a634;
+  color: #ffffff;
 }
 
 .button-detail:active {
-    background-color: #01cf42 !important;
-    border-color: #01cf42 !important;
-    color: #ffffff !important;
+  background-color: #01cf42 !important;
+  border-color: #01cf42 !important;
+  color: #ffffff !important;
 }
 
 .footer-link:hover {
-    font-weight: 700;
-    cursor: pointer;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 #footer-logo {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .carousel-image-fluid {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .carousel-item {
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
 }
 
 .carousel-caption {
-    height: 50%;
+  height: 50%;
 }
 
 .card-text-title {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 
 .card-text-subtitle {
-    font-size: 16px;
-    margin-bottom: 1;
+  font-size: 16px;
+  margin-bottom: 1;
 }
 .card-text-detail {
-    color: #6c757d;
-    font-size: 14px;
+  color: #6c757d;
+  font-size: 14px;
 
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.hr-color {
+  color: #dee2e6;
+  opacity: 1;
 }
