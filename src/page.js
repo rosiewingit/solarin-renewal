@@ -88,7 +88,7 @@ function showDetail(id) {
   showPage(detailPageId);
   window.location.hash = `#page-detail/id/${id}`;
 
-  let defailInfo = {};
+  let detailInfo = {};
 
   let detailTitle = "교육용 LED 키트";
   let detailText = "교육용 LED 키트";
@@ -136,7 +136,7 @@ function showDetail(id) {
       ];
       detailTitle = "쐐기풀";
       detailText = "교육용 LED 키트";
-      detailLink = "http://www.voicechip.co.kr/self-relience/diy.htm";
+      detailLink = "";
       break;
 
     case 3:
@@ -223,12 +223,12 @@ function showDetail(id) {
       break;
   }
 
-  defailInfo.images = detailImages;
-  defailInfo.title = detailTitle;
-  defailInfo.text = detailText;
-  defailInfo.link = detailLink;
+  detailInfo.images = detailImages;
+  detailInfo.title = detailTitle;
+  detailInfo.text = detailText;
+  detailInfo.link = detailLink;
 
-  const bigDetailImage = new BigDetailImage("technology-detail", defailInfo);
+  const bigDetailImage = new BigDetailImage("technology-detail", detailInfo);
   bigDetailImage.init();
 }
 

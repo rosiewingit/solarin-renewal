@@ -79,6 +79,11 @@ class BigDetailImage {
   }
 
   setLink() {
-    $(`#${this.rootId}-link`).attr("href", this.link);
+    if (this.link != "") {
+      $(`#${this.rootId}-link`).removeClass("hidden");
+      $(`#${this.rootId}-link`).attr("href", this.link);
+    } else {
+      $(`#${this.rootId}-link`).addClass("hidden");
+    }
   }
 }
