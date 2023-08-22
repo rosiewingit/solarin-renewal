@@ -97,6 +97,7 @@ class VoicechipVideo {
     this.link = info.link;
     this.video = info.video;
     this.iframe = info.iframe;
+    this.ppt = info.ppt;
   }
 
   init() {
@@ -104,7 +105,20 @@ class VoicechipVideo {
     this.setText();
     this.setLink();
     this.setVideo();
-    this.setIframe();
+    this.setPPT();
+    // this.setIframe();
+  }
+
+  addImage(index) {
+    return `
+    <img class="img-fluid img-fluid-80" src="${this.ppt.root}/${index}.JPG" />
+    `;
+  }
+
+  setPPT() {
+    for (let i = this.ppt.start; i <= this.ppt.end; i++) {
+      $(`#${this.rootId}`).append(this.addImage(i));
+    }
   }
 
   addVideo(video) {
@@ -115,7 +129,6 @@ class VoicechipVideo {
     src="${video}"
     controls
     muted
-    autoplay
     loop
     ></video>
   `;
