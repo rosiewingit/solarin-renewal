@@ -144,6 +144,9 @@ function showDetail(id) {
       detailText =
         "현재 이 제품은 개발 단계의 제품으로 판매중인 제품이 아님을 밝힙니다.<br>This product is currently in the development stage and is not for sale.";
       detailLink = "";
+      detailVideo = "./resources/video/solarReflector.mp4";
+      detailIframe =
+        "http://www.voicechip.co.kr/self-relience/4_solar/41/41.htm";
       break;
 
     case 3:
@@ -242,8 +245,15 @@ function showDetail(id) {
   detailInfo.text = detailText;
   detailInfo.link = detailLink;
 
-  const bigDetailImage = new BigDetailImage("technology-detail", detailInfo);
-  bigDetailImage.init();
+  if (id === 2) {
+    detailInfo.video = detailVideo;
+    detailInfo.iframe = detailIframe;
+    const voicechipVideo = new VoicechipVideo("technology-detail", detailInfo);
+    voicechipVideo.init();
+  } else {
+    const bigDetailImage = new BigDetailImage("technology-detail", detailInfo);
+    bigDetailImage.init();
+  }
 }
 
 function showPatent() {
